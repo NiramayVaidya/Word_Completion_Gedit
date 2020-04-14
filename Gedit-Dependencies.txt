@@ -1,0 +1,27 @@
+gedit-3.22.1 dependencies-
+Required-
+    gsettings-desktop-schemas-3.24.1
+        Required-
+            GLib-2.54.0
+        Recommended-
+            gobject-introspection-1.54.1
+    gtksourceview-3.24.5
+        Required-
+            GTK+-3.22.24
+        Recommended-
+            gobject-introspection-1.54.1
+    itstool-2.0.4
+        Required-
+            docbook-xml-4.5 
+            Python-2.7.14
+    libpeas-1.20.0
+        Required-
+            gobject-introspection-1.54.1
+            GTK+-3.22.24
+        Recommended-
+            PyGObject-3.26.0
+Recommended-
+    Gvfs-1.32.1
+    ISO Codes-3.76
+    libsoup-2.60.1
+    PyGObject-3.26.0

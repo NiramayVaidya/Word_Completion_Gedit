@@ -1,0 +1,73 @@
+Gedit(version-3.22.1) already has a Makefile of its own. Hence, for the new files created as a requirement for word completion purposes, lines have been added to this already existing Makefile for the respective files (splchk_functions.c, splchk_functions.h,gedit-word-selector.c and gedit-word-selector.h) for their compilation.
+Therefore, the executable name would be 'gedit' whose default location would be /usr/local/bin.
+
+Steps to install:
+
+./configure --disable-spell
+
+Error occurs in case of:
+
+    dependencies need to be installed
+    
+        Refer file:
+        
+            Gedit-Depedencies.txt
+            
+                steps to install:
+                
+                    sudo apt install libglib2.0-dev
+                    
+                    sudo apt install gsettings-desktop-schemas
+                    
+                    sudo apt install libgtk-3-dev
+                    
+                    sudo apt install libgtksourceview-3.0-dev
+                    
+                    sudo apt install docbook-xml
+                    
+                    sudo apt install python2.7
+                    
+                    sudo apt install itstool
+                    
+                    sudo apt install gobject-introspection
+                    
+                    sudo apt install libpeas-1.0-0
+                    
+                alternative steps to install as found here- https://askubuntu.com/questions/407014/installing-gedit-3-11-2 :
+                
+                    sudo apt-get install intltool
+                    sudo apt-get install itstool
+                    sudo apt-get install libxml2 libglib2.0-dev libxml2-dev libxml2-utils
+                    sudo apt-get install libxml2-dev
+                    sudo apt-get install libgtksourceviewmm-3.0-dev
+                    sudo apt-get install libpeas-1.0-0 libpeas-dev
+                    sudo apt-get install gsettings-desktop-schemas-dev   
+                    sudo apt-get install libgtkspell3-3-dev libgtkspell3-3-0 libgtksourceview-3.0-dev
+                    sudo apt-get install gtk+3.0
+                    sudo apt-get install gir1.2-gtk-3.0
+                    
+    depedencies need to be upgraded to newest version
+    
+        Refer folder:
+            
+            Gedit-Depedencies.tar.gz
+            
+                steps to install for each dependency (in the dependency folder):
+                
+                    ./autogen.sh (if configure file doesn't exist)
+                    
+                    ./configure
+                    
+                    make
+                    
+                    sudo make install
+                    
+make
+
+    Error regarding file org.gnome.gedit.enums.xml:
+
+        in ../gedit-3.22.1/data/org.gnome.gedit.enums.xml, delete lines 62 and 68 from file and make again
+    
+sudo make install
+
+move the gedit_words_files folder to the location /usr/local/bin/
