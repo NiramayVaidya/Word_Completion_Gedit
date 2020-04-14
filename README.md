@@ -8,6 +8,7 @@ Word completion is an added feature in gedit which gives possible suggestions of
 Features
 --------
 Word suggestions are visible in a pull-up listbox right next to the language selection pull-up listbox
+<br/>
 Pull-up and pull-down of this listbox can also be triggered by the Ctrl+B keyboard shortcut
 
 Images
